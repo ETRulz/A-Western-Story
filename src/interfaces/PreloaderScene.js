@@ -86,8 +86,11 @@ export class PreloaderScene extends Phaser.Scene
         this.load.image('background2', 'assets/Background2.png');
         this.load.image('background3', 'assets/Background3.png');
         this.load.image('background4', 'assets/Background4.png');
+        this.load.image('background4r', 'assets/Background4R.png');
         this.load.image('grass', 'assets/Grass.png');
+        this.load.image('grass2', 'assets/Grass2.png');
         this.load.image('sand', 'assets/Sand.png');
+        this.load.image('sand2', 'assets/Sand2.png');
         this.load.image('clear', 'assets/Clear.png');
         this.load.image('player', 'assets/Player.png');
         this.load.image('bullet', 'assets/Bullet.png');
@@ -103,7 +106,8 @@ export class PreloaderScene extends Phaser.Scene
         this.load.image('bull', 'assets/Bull.png');
         this.load.image('sheriffhouse', 'assets/SheriffHouse.png');
         this.load.audio('cartheftmusic', 'assets/CarTheft.mp3');
-        this.load.image('cactus', 'assets/Cactus.png');
+        this.load.image('cactus', 'assets/Cactus2.png');
+        this.load.image('cactus3', 'assets/Cactus3.png');
         this.load.image('crate', 'assets/Crate.png');
         this.load.image('deadtree', 'assets/DeadTree.png');
         this.load.image('barrel', 'assets/Barrel.png');
@@ -134,6 +138,8 @@ export class PreloaderScene extends Phaser.Scene
         this.load.image('bigHouse', 'assets/bigHouse.png');
         this.load.image('saloon', 'assets/Saloon.png');
         this.load.image('waterTower', 'assets/waterTower.png');
+        this.load.image('horse', 'assets/horse.png');
+        this.load.image('horse2', 'assets/horse2.png');
         this.load.image('extrahealth', 'assets/ExtraHealth.png');
         this.load.image('flight', 'assets/Flight.png');
         this.load.image('tripleshot', 'assets/TripleShot.png');

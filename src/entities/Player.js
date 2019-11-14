@@ -88,7 +88,7 @@ export class Player extends Phaser.Physics.Matter.Sprite
         //Creating Health Display
         this.healthSprite = scene.add.sprite(20, 20, 'hearts'); 
         scene.add.existing(this.healthSprite);
-        this.healthSprite.setFrame(0).setScrollFactor(0, 0);
+        this.healthSprite.setFrame(0).setScrollFactor(0, 0).setDepth(999);
 
         this.displayHealth = scene.add.text(30, 12, this.status.health, {color:'#DC143C'});
         this.displayHealth.setScrollFactor(0, 0);
@@ -155,11 +155,29 @@ export class Player extends Phaser.Physics.Matter.Sprite
         {
             this.healthSprite.setFrame(2);
         }
+        else if (this.status.health > 10)
+        {
+            this.healthSprite.setFrame(1);
+        }
         this.displayHealth.setText(this.status.health);
         if (this.status.health <= 0) 
         {
             this.death();
         }
+    }
+
+    setHealth(health)
+    {
+        this.status.health = health;
+        if (this.status.health < 10)
+        {
+            this.healthSprite.setFrame(2);
+        }
+        else if (this.status.health > 10)
+        {
+            this.healthSprite.setFrame(1);
+        }
+        this.displayHealth.setText(this.status.health);
     }
 
     damagedEffects()
